@@ -7,7 +7,7 @@ public class HelloWorldControllerTest {
 	@Test
 	public void test3(){
 		
-		assertTrue("test3" , true);
+		assertTrue("test" , true);
 	}
 
 }
