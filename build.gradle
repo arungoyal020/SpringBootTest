@@ -10,7 +10,8 @@ buildscript {
           "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
- 
+
+apply plugin: com.gradle.scan.plugin.BuildScanPlugin 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -35,11 +36,7 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
-rootProject {
-    apply plugin: com.gradle.scan.plugin.BuildScanPlugin
-
-    buildScan {
-        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
-        termsOfServiceAgree = 'yes'
-    }
-}
+ buildScan {
+	termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+ 	termsOfServiceAgree = 'yes'
+ }
