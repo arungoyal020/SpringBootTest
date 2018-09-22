@@ -8,7 +8,7 @@ public class MainCofigTest {
 	@Test
 	public void test1()
 	{
-		assertTrue("should be true", false);
+		assertTrue("should be true--", false);
 	}
 	
 }
