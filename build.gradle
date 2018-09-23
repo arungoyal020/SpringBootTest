@@ -49,9 +49,11 @@ buildScan {
 
 
 cobertura {
-    coverageFormats = ['html', 'xml']				
-    coverageIgnoreTrivial = true					
-    coverageIgnores = ['org.slf4j.Logger.*']			
+	coverageSourceDirs = ['src']
+    coverageExcludes = ['*Test*']
+    coverageFormats = ['html', 'xml']
+    /*coverageIgnoreTrivial = true					
+    coverageIgnores = ['org.slf4j.Logger.*']*/			
     coverageReportDir = new File("$buildDir/reports/cobertura")	
 }
 
