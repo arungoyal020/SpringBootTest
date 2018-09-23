@@ -8,7 +8,7 @@ public class HelloWorld {
 	public boolean getBoolean()
 	{
 		Boolean b = new Boolean(true);
-		
+		Integer i = new Integer(0);
 		return true;
 	}
 	
