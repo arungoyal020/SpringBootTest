@@ -11,7 +11,12 @@ buildscript {
     }
 }
 
-//apply plugin: com.gradle.scan.plugin.BuildScanPlugin 
+
+
+plugins {
+    id 'com.gradle.build-scan' version '1.16' 
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -37,12 +42,11 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
-/*
 buildScan {
 	termsOfServiceUrl = 'https://gradle.com/terms-of-service'
  	termsOfServiceAgree = 'yes'
 }
-*/
+
 
 cobertura {
     coverageFormats = ['html', 'xml']				
