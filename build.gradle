@@ -49,8 +49,6 @@ buildScan {
 
 
 cobertura {
-	coverageSourceDirs = ['src']
-    coverageExcludes = ['*Test*']
     coverageFormats = ['html', 'xml']
     /*coverageIgnoreTrivial = true					
     coverageIgnores = ['org.slf4j.Logger.*']*/			
